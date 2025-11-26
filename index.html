@@ -114,11 +114,11 @@
     phrase.style.left = `${rect.left + rect.width/2 - 50}px`;
     phrase.style.top = `${rect.top - 20}px`;
 
-
+    // Рандомний напрямок
     const angle = Math.random() * 2 * Math.PI;
     const distance = 150 + Math.random() * 50;
     const x = Math.cos(angle) * distance + "px";
-    const y = Math.sin(angle) * distance * -1 + "px"; 
+    const y = Math.sin(angle) * distance * -1 + "px"; // вверх
     phrase.style.setProperty('--x', x);
     phrase.style.setProperty('--y', y);
 
